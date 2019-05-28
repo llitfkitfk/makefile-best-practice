@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    image: alpine
+    tty: true
+    command: sh
+    stdin_open: true
+    working_dir: /home/data
+    volumes:
+      - ./data:/home/data
